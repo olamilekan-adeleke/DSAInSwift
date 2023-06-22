@@ -56,4 +56,21 @@ final class StackTest: XCTestCase {
         XCTAssertEqual(stack.pop(), "A")
         XCTAssertFalse(stack.hasItem)
     }
+
+    func testDescription() throws {
+        let stack = InMemoryStack<Int>()
+        stack.append(0)
+        stack.append(1)
+        stack.append(2)
+
+        let string = """
+        ----top----
+        2
+        1
+        0
+        -----------
+        """
+
+        XCTAssertEqual(stack.description, string)
+    }
 }
