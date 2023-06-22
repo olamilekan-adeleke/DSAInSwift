@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		39D5448C2A4490A7009D5F41 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D5448B2A4490A7009D5F41 /* main.swift */; };
-		39D544942A4490D2009D5F41 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D544932A4490D2009D5F41 /* Stack.swift */; };
+		39D544942A4490D2009D5F41 /* StackImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D544932A4490D2009D5F41 /* StackImpl.swift */; };
 		39DA82042A44A6A300124BE0 /* DSATest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DA82032A44A6A300124BE0 /* DSATest.swift */; };
-		39DA820D2A44A74200124BE0 /* StackTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DA820C2A44A74200124BE0 /* StackTest.swift */; };
-		39DA82112A44A9A700124BE0 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D544932A4490D2009D5F41 /* Stack.swift */; };
+		39DA820D2A44A74200124BE0 /* InMemoryStackTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DA820C2A44A74200124BE0 /* InMemoryStackTest.swift */; };
+		39DA82112A44A9A700124BE0 /* StackImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D544932A4490D2009D5F41 /* StackImpl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,10 +39,10 @@
 /* Begin PBXFileReference section */
 		39D544882A4490A7009D5F41 /* DSA */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DSA; sourceTree = BUILT_PRODUCTS_DIR; };
 		39D5448B2A4490A7009D5F41 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		39D544932A4490D2009D5F41 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		39D544932A4490D2009D5F41 /* StackImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackImpl.swift; sourceTree = "<group>"; };
 		39DA82012A44A6A300124BE0 /* DSATest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DSATest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		39DA82032A44A6A300124BE0 /* DSATest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSATest.swift; sourceTree = "<group>"; };
-		39DA820C2A44A74200124BE0 /* StackTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackTest.swift; sourceTree = "<group>"; };
+		39DA820C2A44A74200124BE0 /* InMemoryStackTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryStackTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +93,7 @@
 		39D544922A4490B1009D5F41 /* Stack */ = {
 			isa = PBXGroup;
 			children = (
-				39D544932A4490D2009D5F41 /* Stack.swift */,
+				39D544932A4490D2009D5F41 /* StackImpl.swift */,
 			);
 			path = Stack;
 			sourceTree = "<group>";
@@ -110,7 +110,7 @@
 		39DA820B2A44A73100124BE0 /* Stack */ = {
 			isa = PBXGroup;
 			children = (
-				39DA820C2A44A74200124BE0 /* StackTest.swift */,
+				39DA820C2A44A74200124BE0 /* InMemoryStackTest.swift */,
 			);
 			path = Stack;
 			sourceTree = "<group>";
@@ -205,7 +205,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				39D544942A4490D2009D5F41 /* Stack.swift in Sources */,
+				39D544942A4490D2009D5F41 /* StackImpl.swift in Sources */,
 				39D5448C2A4490A7009D5F41 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -214,8 +214,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				39DA82112A44A9A700124BE0 /* Stack.swift in Sources */,
-				39DA820D2A44A74200124BE0 /* StackTest.swift in Sources */,
+				39DA82112A44A9A700124BE0 /* StackImpl.swift in Sources */,
+				39DA820D2A44A74200124BE0 /* InMemoryStackTest.swift in Sources */,
 				39DA82042A44A6A300124BE0 /* DSATest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
