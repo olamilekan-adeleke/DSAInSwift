@@ -10,14 +10,14 @@ import XCTest
 
 final class StackTest: XCTestCase {
     func testStackCount() throws {
-        let stack = InMemoryStack<Int>()
+        var stack = InMemoryStack<Int>()
         XCTAssertEqual(stack.stackCount, 0)
         stack.append(0)
         XCTAssertEqual(stack.stackCount, 1)
     }
 
     func testHasItem() throws {
-        let stack = InMemoryStack<Int>()
+        var stack = InMemoryStack<Int>()
         XCTAssertEqual(stack.hasItem, false)
         stack.append(0)
         stack.append(1)
@@ -25,7 +25,7 @@ final class StackTest: XCTestCase {
     }
 
     func testPeek() throws {
-        let stack = InMemoryStack<Int>()
+        var stack = InMemoryStack<Int>()
         XCTAssertNil(stack.peek)
         stack.append(0)
         stack.append(1)
@@ -36,7 +36,7 @@ final class StackTest: XCTestCase {
     }
 
     func testAppendItemToStack() throws {
-        let stack = InMemoryStack<String>()
+        var stack = InMemoryStack<String>()
         XCTAssertFalse(stack.hasItem)
         stack.append("A")
         stack.append("B")
@@ -50,7 +50,7 @@ final class StackTest: XCTestCase {
     }
 
     func testPopStack() throws {
-        let stack = InMemoryStack<String>()
+        var stack = InMemoryStack<String>()
         XCTAssertNil(stack.pop())
         stack.append("A")
         XCTAssertEqual(stack.pop(), "A")
@@ -58,7 +58,7 @@ final class StackTest: XCTestCase {
     }
 
     func testDescription() throws {
-        let stack = InMemoryStack<Int>()
+        var stack = InMemoryStack<Int>()
         stack.append(0)
         stack.append(1)
         stack.append(2)
@@ -72,5 +72,28 @@ final class StackTest: XCTestCase {
         """
 
         XCTAssertEqual(stack.description, string)
+    }
+
+    // ----
+    func testSequence() throws {
+        var stack = InMemoryStack<Int>()
+//        stack.append(1)
+//        stack.append(2)
+//        stack.append(3)
+//        stack.append(4)
+//        stack.append(5)
+//        stack.append(6)
+//
+//        for ele in stack {
+//            XCTAssertEqual(ele, 6)
+//        }
+    }
+    
+    func test_custom_type_which_only_confrom_to_equatable_should_be_use_by_the_stack()  {
+        
+    }
+    
+    func test_custom_type_which_only_confrom_to_hashable_should_be_use_by_the_stack()   {
+        
     }
 }

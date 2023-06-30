@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		397A8C2C2A4B3E6200DDDDFF /* bs_list.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397A8C2B2A4B3E6200DDDDFF /* bs_list.swift */; };
 		39D5448C2A4490A7009D5F41 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D5448B2A4490A7009D5F41 /* main.swift */; };
 		39D544942A4490D2009D5F41 /* StackImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D544932A4490D2009D5F41 /* StackImpl.swift */; };
 		39DA82042A44A6A300124BE0 /* DSATest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DA82032A44A6A300124BE0 /* DSATest.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		397A8C2B2A4B3E6200DDDDFF /* bs_list.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bs_list.swift; sourceTree = "<group>"; };
 		39D544882A4490A7009D5F41 /* DSA */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DSA; sourceTree = BUILT_PRODUCTS_DIR; };
 		39D5448B2A4490A7009D5F41 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		39D544932A4490D2009D5F41 /* StackImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackImpl.swift; sourceTree = "<group>"; };
@@ -63,6 +65,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		397A8C2A2A4B3E5000DDDDFF /* BinarySearch */ = {
+			isa = PBXGroup;
+			children = (
+				397A8C2B2A4B3E6200DDDDFF /* bs_list.swift */,
+			);
+			path = BinarySearch;
+			sourceTree = "<group>";
+		};
 		39D5447F2A4490A7009D5F41 = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +94,7 @@
 		39D5448A2A4490A7009D5F41 /* DSA */ = {
 			isa = PBXGroup;
 			children = (
+				397A8C2A2A4B3E5000DDDDFF /* BinarySearch */,
 				39D544922A4490B1009D5F41 /* Stack */,
 				39D5448B2A4490A7009D5F41 /* main.swift */,
 			);
@@ -205,6 +216,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				397A8C2C2A4B3E6200DDDDFF /* bs_list.swift in Sources */,
 				39D544942A4490D2009D5F41 /* StackImpl.swift in Sources */,
 				39D5448C2A4490A7009D5F41 /* main.swift in Sources */,
 			);
